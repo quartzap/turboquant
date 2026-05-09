@@ -1,0 +1,14 @@
+# Core numerical and plotting stack
+numpy>=1.24
+matplotlib>=3.7
+tqdm>=4.66
+
+# PyTorch / Hugging Face model runtime
+torch>=2.2
+transformers>=4.41
+accelerate>=0.30
+safetensors>=0.4.3
+
+# Tokenizer compatibility for Gemma/TinyLlama-style Hugging Face models
+sentencepiece>=0.2.0
+protobuf>=4.25
