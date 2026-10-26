@@ -1,0 +1,8 @@
+APEX Check is an evaluation tool we built to test how well AI models handle real professional work in finance, legal, consulting and medicine. It runs on our own machine. It works with hosted models and with open models running locally, and it uses a separate model as an independent judge.
+
+For this demo, we used Mercor’s public APEX benchmark. Specifically, we took Mercor’s published tasks, the expert-written grading rubrics for each task, Mercor’s answer prompt, and Mercor’s scoring method: the share of rubric criteria an answer meets. The harness, task selection, grading setup and reporting are our own.
+
+The demo compared Google’s Gemini 3.5 Flash-Lite (cloud, free tier) with Gemma 4 e2b (running locally) on 8 short public tasks, 2 per domain. NVIDIA’s Nemotron graded the answers in a fast single-call mode. Gemini scored about 34% and Gemma about 16%, but with only 8 tasks the difference is within the margin of error. Treat the results as directional, not as comparable to Mercor’s leaderboard.
+
+One-line version (for a slide footer or video caption):
+“Built on Mercor’s public APEX tasks, rubrics and scoring method, run on our own harness with an independent judge. Results are directional (8 tasks, fast grading).”
